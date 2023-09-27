@@ -2,9 +2,6 @@ import chainlit as cl
 import openai
 import os
 
-openai.api_key = "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"
-
-
 def get_gpt_output(user_message):
     response = openai.ChatCompletion.create(
         model="gpt-4",
